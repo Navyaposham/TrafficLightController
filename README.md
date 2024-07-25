@@ -33,8 +33,8 @@ and TY(from S6 to S1) and the cycle continues.
 <tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">011</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
 <tr><td colspan="1" valign="bottom">011</td><td colspan="1">!TTG</td><td colspan="1">011</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">001</td><td colspan="1">100</td></tr>
 <tr><td colspan="1"></td><td colspan="1">TTG</td><td colspan="1">100</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">001</td><td colspan="1">100</td></tr></td></tr>
-<tr><td colspan="1" valign="bottom">100</td><td colspan="1">!TY</td><td colspan="1">011</td><td colspan="1">0</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
-<tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
+<tr><td colspan="1" valign="bottom">100</td><td colspan="1">!TY</td><td colspan="1">100</td><td colspan="1">0</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">101</td><td colspan="1">1</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
 <tr><td colspan="1" valign="bottom">101</td><td colspan="1">!TSG</td><td colspan="1">101</td><td colspan="1">0</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">001</td></tr>
 <tr><td colspan="1"></td><td colspan="1">TSG</td><td colspan="1">110</td><td colspan="1">1</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">001</td></tr>
 <tr><td colspan="1" valign="bottom">110</td><td colspan="1">!TY</td><td colspan="1">110</td><td colspan="1">0</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">010</td></tr>
