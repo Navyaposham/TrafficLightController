@@ -8,7 +8,7 @@ The purpose of this project is to design a methodology using Verilog to control 
 
 ![directions](https://github.com/user-attachments/assets/22ede362-9d52-4f0e-9cfe-127520759d8c)
 
-The directions, M1, MT, M2, S, that is been considered for analysis of our problem is shown in the figure. And, the problem statement is explained in the figure. 
+The directions, M1, MT, M2, S, that is been considered for analysis of our problem is shown in the figure. And, the problem statement is explained in the figure.     
 Six states, S1, S2, S3, S4, S5, S6 are taken into consideration and state diagram, state table is made using the following logic explained in the figure.   
 Time delays for changing from one state to another is considered as, TMG(from S1 to S2), TY(from S2 to S3), TTG(from S3 to S4), TY(from S4 to S5), TSG(from S5 to S6) 
 and TY(from S6 to S1) and the cycle continues.
