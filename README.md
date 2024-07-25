@@ -26,6 +26,7 @@ and TY(from S6 to S1) and the cycle continues.
 
 ### State Table
 
+
 <table><tr><th colspan="1">Present State(ABC)</th><th colspan="1">Input</th><th colspan="1">Next State(A*B*C*)</th><th colspan="1">ST</th><th>M1(RYG)</th><th>M2(RYG)</th><th>MT(RYG)</th><th>S(RYG)</th></tr>
 <tr><td colspan="1" valign="bottom">001</td><td colspan="1">!TMG</td><td colspan="1">001</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">100</td></tr>
 <tr><td colspan="1"></td><td colspan="1">TMG</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
