@@ -22,3 +22,20 @@ and TY(from S6 to S1) and the cycle continues.
 
 ### State Diagram
 
+![sd](https://github.com/user-attachments/assets/5b259815-66b9-4c39-b53e-198e2debade9)
+
+### State Table
+
+<table><tr><th colspan="1">Present State(ABC)</th><th colspan="1">Input</th><th colspan="1">Next State(A*B*C*)</th><th colspan="1">ST</th><th>M1(RYG)</th><th>M2(RYG)</th><th>MT(RYG)</th><th>S(RYG)</th></tr>
+<tr><td colspan="1" valign="bottom">Reset</td><td colspan="1">reset = 1</td><td colspan="1">Reset</td><td colspan="1">Idle =1,door=0, Up=1, Down=0,requests=0, estop=0, current_floor=0</td></tr>
+<tr><td colspan="1"></td><td colspan="1">reset = 0</td><td colspan="1">Door Closed & Idle (1)</td><td colspan="1">Idle =1,door=0, Up=1, door_timer=0</td></tr>
+<tr><td colspan="1"></td><td colspan="1">Checker : requests[current_floor] = 1</td><td colspan="1">Door Open & Idle (1)</td><td colspan="1">door = 1; idle = 1; requests[current_floor] = 0; door_timer = 1</td></tr>
+<tr><td colspan="1" rowspan="2">Door Closed & Idle (1)</td><td colspan="1">max_request > current_floor  && Up = 0</td><td colspan="1">Moving Up</td><td colspan="1">idle = 0; current floor +=1</td></tr>
+<tr><td colspan="1">min_request > current_floor && Down = 0</td><td colspan="1">Moving Down</td><td colspan="1">idle = 0; current floor -=1</td></tr>
+<tr><td colspan="1"></td><td colspan="1">max_request = current_floor</td><td colspan="1">Down Direction Setter</td><td colspan="1">Up=0; Down=1</td></tr>
+<tr><td colspan="1"></td><td colspan="1">min_request = current_floor</td><td colspan="1">Up Direction Setter</td><td colspan="1">Up=1; Down=0</td></tr>
+<tr><td colspan="1">Door Open & Idle (1)</td><td colspan="1">door_timer = 1</td><td colspan="1">Door Closed & Idle (1)</td><td colspan="1">Idle =1,door=0, Up=1, door_timer=0</td></tr>
+<tr><td colspan="1"></td><td colspan="1" valign="bottom">Checker = 1</td><td colspan="1" valign="bottom">Door Open & Idle (1)</td><td colspan="1" valign="bottom">door = 1; idle = 1; requests[current_floor] = 0; door_timer = 1</td></tr>
+<tr><td colspan="1" valign="top">Moving Up</td><td colspan="1" valign="bottom">Checker = 0</td><td colspan="1" valign="bottom">Moving Up</td><td colspan="1" valign="bottom">idle = 0; current floor +=1</td></tr>
+<tr><td colspan="1"></td><td colspan="1">estop = 1</td><td colspan="1">Door Closed & Idle (1)</td><td colspan="1">Idle =1,door=0, Up=1, door_timer=0</td></tr>
+<tr><td colspan="1"></td><td colspan="1" valign="bottom">Checker = 1</td><td colspan="1" valign="bottom">Door Open & Idle (1)</td><td colspan="1" valign="bottom">door = 1; idle = 1; requests[current_floor] = 0; door_timer = 1</td></tr></table>
