@@ -31,12 +31,12 @@ and TY(from S6 to S1) and the cycle continues.
 <tr><td colspan="1"></td><td colspan="1">TMG</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
 <tr><td colspan="1" valign="bottom">010</td><td colspan="1">!TY</td><td colspan="1">010</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">100</td></tr>
 <tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">011</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
-<tr><td colspan="1" rowspan="2">Door Closed & Idle (1)</td><td colspan="1">max_request > current_floor  && Up = 0</td><td colspan="1">Moving Up</td><td colspan="1">idle = 0; current floor +=1</td></tr>
-<tr><td colspan="1">min_request > current_floor && Down = 0</td><td colspan="1">Moving Down</td><td colspan="1">idle = 0; current floor -=1</td></tr>
-<tr><td colspan="1"></td><td colspan="1">max_request = current_floor</td><td colspan="1">Down Direction Setter</td><td colspan="1">Up=0; Down=1</td></tr>
-<tr><td colspan="1"></td><td colspan="1">min_request = current_floor</td><td colspan="1">Up Direction Setter</td><td colspan="1">Up=1; Down=0</td></tr>
-<tr><td colspan="1">Door Open & Idle (1)</td><td colspan="1">door_timer = 1</td><td colspan="1">Door Closed & Idle (1)</td><td colspan="1">Idle =1,door=0, Up=1, door_timer=0</td></tr>
-<tr><td colspan="1"></td><td colspan="1" valign="bottom">Checker = 1</td><td colspan="1" valign="bottom">Door Open & Idle (1)</td><td colspan="1" valign="bottom">door = 1; idle = 1; requests[current_floor] = 0; door_timer = 1</td></tr>
-<tr><td colspan="1" valign="top">Moving Up</td><td colspan="1" valign="bottom">Checker = 0</td><td colspan="1" valign="bottom">Moving Up</td><td colspan="1" valign="bottom">idle = 0; current floor +=1</td></tr>
-<tr><td colspan="1"></td><td colspan="1">estop = 1</td><td colspan="1">Door Closed & Idle (1)</td><td colspan="1">Idle =1,door=0, Up=1, door_timer=0</td></tr>
-<tr><td colspan="1"></td><td colspan="1" valign="bottom">Checker = 1</td><td colspan="1" valign="bottom">Door Open & Idle (1)</td><td colspan="1" valign="bottom">door = 1; idle = 1; requests[current_floor] = 0; door_timer = 1</td></tr></table>
+<tr><td colspan="1" valign="bottom">011</td><td colspan="1">!TTG</td><td colspan="1">011</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">001</td><td colspan="1">100</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TTG</td><td colspan="1">100</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">001</td><td colspan="1">100</td></tr></td></tr>
+<tr><td colspan="1" valign="bottom">100</td><td colspan="1">!TY</td><td colspan="1">011</td><td colspan="1">0</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">010</td><td colspan="1">100</td></tr>
+<tr><td colspan="1" valign="bottom">100</td><td colspan="1">!TSG</td><td colspan="1">110</td><td colspan="1">0</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">010</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TSG</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">010</td></tr>
+<tr><td colspan="1" valign="bottom">110</td><td colspan="1">!TY</td><td colspan="1">110</td><td colspan="1">0</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">010</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">001</td><td colspan="1">1</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">100</td><td colspan="1">010</td></tr>
+<tr><td colspan="1" valign="bottom">111</td><td colspan="1">-</td><td colspan="1">000</td><td colspan="1">0</td><td colspan="1">000</td><td colspan="1">000</td><td colspan="1">000</td><td colspan="1">000</td></tr>
