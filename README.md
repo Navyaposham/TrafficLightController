@@ -6,7 +6,7 @@ The purpose of this project is to design a methodology using Verilog to control 
 
 ### Directions Considered
 
-![directions](https://user-images.githubusercontent.com/83152452/131366734-67c76e3c-b53d-49ca-a5ba-fb058d19d578.png)
+![directions](https://github.com/user-attachments/assets/22ede362-9d52-4f0e-9cfe-127520759d8c)
 
 The directions, M1, MT, M2, S, that is been considered for analysis of our problem is shown in the figure. And, the problem statement is explained in the figure. 
 Six states, S1, S2, S3, S4, S5, S6 are taken into consideration and state diagram, state table is made using the following logic explained in the figure. 
@@ -15,7 +15,7 @@ and TY(from S6 to S1) and the cycle continues.
 
 ### Problem Statement
 
-![Logic_Diagram](https://user-images.githubusercontent.com/83152452/131366783-8c025386-8011-4ef9-a766-d0a07e4244ac.png)
+![ps](https://github.com/user-attachments/assets/f9c0a73c-4430-472e-b7db-12ba3f6821bc)
 
 - Green light indicates that there is no traffic and there is easy flow of vehicles in that route/direction. 
 - Red light indicates that there is a traffic jam and that route is blocked for the vehicles to move and, 
