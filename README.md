@@ -29,6 +29,8 @@ and TY(from S6 to S1) and the cycle continues.
 <table><tr><th colspan="1">Present State(ABC)</th><th colspan="1">Input</th><th colspan="1">Next State(A*B*C*)</th><th colspan="1">ST</th><th>M1(RYG)</th><th>M2(RYG)</th><th>MT(RYG)</th><th>S(RYG)</th></tr>
 <tr><td colspan="1" valign="bottom">001</td><td colspan="1">!TMG</td><td colspan="1">001</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">100</td></tr>
 <tr><td colspan="1"></td><td colspan="1">TMG</td><td colspan="1">010</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">001</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
+<tr><td colspan="1" valign="bottom">010</td><td colspan="1">!TY</td><td colspan="1">010</td><td colspan="1">0</td><td colspan="1">001</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">100</td></tr>
+<tr><td colspan="1"></td><td colspan="1">TY</td><td colspan="1">011</td><td colspan="1">1</td><td colspan="1">001</td><td colspan="1">010</td><td colspan="1">100</td><td colspan="1">100</td></tr></td></tr>
 <tr><td colspan="1" rowspan="2">Door Closed & Idle (1)</td><td colspan="1">max_request > current_floor  && Up = 0</td><td colspan="1">Moving Up</td><td colspan="1">idle = 0; current floor +=1</td></tr>
 <tr><td colspan="1">min_request > current_floor && Down = 0</td><td colspan="1">Moving Down</td><td colspan="1">idle = 0; current floor -=1</td></tr>
 <tr><td colspan="1"></td><td colspan="1">max_request = current_floor</td><td colspan="1">Down Direction Setter</td><td colspan="1">Up=0; Down=1</td></tr>
